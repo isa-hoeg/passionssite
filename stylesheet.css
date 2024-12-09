@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-top: 10px;
+  font-size: 18px;
+  font-style: oblique;
+  background-color: beige;
+  border: 1px solid black;
+}
+.logo img {
+  max-width: 25%;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  border-radius: 2px;
+  border: 1px solid black;
+}
+.menu a {
+  display: block;
+  padding: 7px;
+  color: #030000f0;
+  background-color: rgb(255, 142, 4);
+  border-radius: 2px;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: black;
+  background-color: rgb(220, 222, 196);
+  border-radius: 2px;
+}
+body {
+  background-color: rgba(240, 240, 236, 0.57);
+}
+@font-face {
+  font-family: playfair;
+  src: url(font/playfair/playfairdisplay-variablefont_wght-webfont.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: playfair;
+  font-size: 60px;
+  padding: 15px;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  font-weight: 300;
+}
+p {
+  font-size: 18px;
+  padding: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@font-face {
+  font-family: rozhaone;
+  src: url(font/rozhaone/rozhaone-regular-webfont.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.underoverskrifter {
+  font-size: 18px;
+  font-family: rozhaone;
+  padding: 25px;
+  color: black;
+}
+.img_section {
+  background-color: rgba(255, 140, 0, 0.849);
+  padding-bottom: 15px;
+  margin: 15px;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+footer {
+  background-color: beige;
+  border: 1px solid black;
+}

@@ -1,0 +1,167 @@
+.hero_section {
+  background-image: url(img/hero.webp);
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.img_m_tekst {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.lamper {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  align-self: stretch;
+  border-radius: 30px;
+  filter: brightness(70%);
+  border: 1px solid black;
+}
+.tekst_img {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  color: white;
+  place-self: center start;
+  z-index: 1;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(70%);
+  gap: 15px;
+  border-radius: 20px;
+  aspect-ratio: 1 / 1;
+}
+.grid_4_imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.video_1,
+.video_2 {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.video_1 video {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.video_2 iframe {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+/* herunder laves layoyt til desktop format */
+@media (min-width: 850px) {
+  header {
+    font-size: 36px;
+    padding-right: 3rem;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .img_m_tekst {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    object-fit: cover;
+  }
+  h1 {
+    font-family: playfair;
+    font-size: 78px;
+    margin-top: 3rem;
+    padding: 15px;
+  }
+  h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 22px;
+    padding: 15px;
+    padding-top: 27px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: justify;
+  }
+  .underoverskrifter {
+    font-size: 25px;
+    text-align: center;
+    font-family: rozhaone;
+    padding: 20px;
+    color: rgb(85, 84, 84);
+  }
+  .grid_4_imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .img1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    aspect-ratio: 1 / 2.05;
+    border: 1px solid black;
+  }
+  .img2 {
+    grid-column: 2 / span 2;
+    aspect-ratio: 2 / 1;
+    border: 1px solid black;
+  }
+  .img3 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+  }
+  .img4 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+  }
+  .videoer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .video_1,
+  .video_2 {
+    padding: 20px;
+  }
+  .video_1 video {
+    border-radius: 20px;
+    border: 1px solid black;
+    filter: brightness(70%);
+  }
+  .video_2 iframe {
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+}
