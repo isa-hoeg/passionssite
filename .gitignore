@@ -1,5 +1,5 @@
 # ved hjælp af gitignore ignorerer man her videoerne, så de ikke kommer med på Github (computer på nettet), men forbliver på denne computer (git)
-# Denne .gitignore skal laves som noget af det første, inden man begydner at commit, publish mm., så den ignorerer f.eks. videoer, da de fylder meget, hvorfor det ikke bør tages med til f.eks. eksamen
+# Denne .gitignore skal laves som noget af det første, inden man begydner at commit, publish mm., da den ellers ikke vil ignorere f.eks. videoer og blive grå. De bør ignoreres, da de fylder meget, hvorfor det ikke bør tages med til f.eks. eksamen
 *.mp4
 *.mov
 *.DS_Store
